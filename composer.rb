@@ -1814,6 +1814,9 @@ if prefer :railsapps, 'rails-stripe-membership-saas'
     copy_from_repo 'app/controllers/application_controller.rb', :repo => repo
     copy_from_repo 'app/controllers/users_controller.rb', :repo => repo
 
+    # >-------------------------------[ Helpers ]--------------------------------<
+    copy_from_repo 'app/helpers/application_helper.rb', :repo => repo
+
     # >-------------------------------[ Mailers ]--------------------------------<
     generate 'mailer UserMailer'
     copy_from_repo 'app/mailers/user_mailer.rb', :repo => repo
